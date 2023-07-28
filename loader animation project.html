@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation loader</title>
+    <style>
+        body {
+            background-color: black;
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .loader {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: opacity 0.75s, visibility 0.75s;
+
+        }
+        .loader::after{
+            width: 200px;
+            height: 200px;
+            content: " ";
+            border: 15px solid #dddd;
+            border-right-color: #009578;
+            border-radius: 50%; 
+            animation: loader 0.75s ease infinite;
+
+        }
+        @keyframes loader {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="loader"></div>
+
+</body>
+
+</html>

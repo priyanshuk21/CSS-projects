@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>persional portfolio</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-color: #939597;
+        }
+        .logo{
+            display: flex;
+            align-items: center;
+        
+        }
+        nav{
+            display: flex;
+        }
+        nav ul{
+            height: 80px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        nav ul li{
+            list-style: none;
+            padding: 0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: black;
+        }
+        nav ul li a:hover{
+            font-weight: bolder;
+            color: red;
+        }
+        .container{
+            background-color: #363945;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 50px;
+            animation-name: container;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            
+        }
+        .container:hover{
+            font-weight: bolder;
+            color: red;
+        }
+        
+        @keyframes container {
+            from{
+                font-size: 50px;
+            }
+            to{
+                font-size: 62px;
+            }
+            
+        }
+       
+            
+        
+
+        
+    
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="download.png" alt="" width="121px">
+            </div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about me.html">AboutMe</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li><a href="hire.html">HireMe</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+       <div class="container">
+               Hii!
+               I am PRIYANSHU KUMAR  
+            
+        </div>
+       </div>
+    </main>
+</body>
+</html>
